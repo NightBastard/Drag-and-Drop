@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Общие стили */
+body {
+    /* Шрифт */
+    font-family: 'Open Sans', sans-serif;
+    /* Фон */
+    background-color: #e5e5e5;
+    /* Внутренний отсутп сверху */
+    padding-top: 5rem;
+    /* Обнуляем отступы */
+    margin: 0;
+    /* Выравниваем по центру */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Стили для строки */
+.row {
+    /* Контент становится в одну линию */
+    display: flex;
+    /* Ширина блока */
+    width: 600px;
+    /* Растояние между блоками */
+    justify-content: space-between;
+    /* Отступ снизу */
+    margin-bottom: 1rem;
+}
+
+/* Стили для колонок */
+.col-header {
+    /* Ширина колонки */
+    width: 150px;
+    /* Тени */
+    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+    /* Загруляем края */
+    border-radius: 20px;
+    /* Внутренние отступы */
+    padding: 0.8rem 1rem;
+    /* Цвет текста */
+    color: #fff;
+    text-align: center;
+}
+
+/* Стили элемента, который будет перемещаться */
+.item {
+    /* Ширина */
+    width: 150px;
+    /* Высота */
+    height: 66px;
+    /* Рамка */
+    border: 1px solid #eee;
+    /* Тень */
+    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+    /* Закругление краев */
+    border-radius: 20px;
+    /* Фон */
+    background: #f7f6f7;
+    /* Отступы внутрениие */
+    padding: 0.8rem 1rem;
+    /* Цвет текста */
+    color: #828282;
+    /* Положение текста */
+    text-align: center;
+    cursor: grab;
+}
+
+/* Стили активного элемента */
+.item:active {
+    cursor: grabbing;
+}
+
+/* Стили контейнера карточек */
+.placeholder {
+    width: 150px;
+    height: 66px;
+}
+
+/* Градиент для атрибутов */
+.start {
+    background: linear-gradient(21deg, #dd03e4, #5611ec);
+}
+
+.progress {
+    background: linear-gradient(21deg, #DD0BAB, #C609F5);
+}
+
+.done {
+    background: linear-gradient(21deg, #E901EB, #6011E1);
+}
+
+.hold {
+    border: thick double #A1EAFB;
+}
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    border-top: 4px dashed #CABBE9;
+}
